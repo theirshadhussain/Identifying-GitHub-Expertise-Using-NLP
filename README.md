@@ -1,22 +1,19 @@
 # Identifying-GitHub-Expertise-Using-NLP
-### Note: 
+## Note: 
 This is a reproduction project as part of the MSR course 2022 at UniKo, CS department, SoftLang Team
-### Team name: 
+## Name of the team: 
 Whiskey
-### Student names: 
+## Student names: 
 - Aneesa Sulthana Jagaraspalli
 - Irshad Hussain Mohammed
 - Pavan Kumar Tokachichu
 
-### Title of the Paper Being Reproduced: 
- RepoSkillMiner: identifying software expertise from GitHub repositories using natural language processing
-
-
-### Description: 
-In this paper, an approach has been introduced to advance the state-of-the art on mining kill related information from coding platforms with a hybrid approach using NLP.
-
+## Objective of Reproduction
+### Description : 
+Training Microsoft LUIS with utterances of different technologies using NLP and  testing the acquired code chunks from github repositories  on the trained LUIS to find Precision, Recall and F-measure.
 ### Input data:  
-Using GitHub REST API version 3, https://developer.github.com/v3/ to retrieve commits and authors of each commit. 
+Used GitHub REST API version 3, https://developer.github.com/v3/ to fetch input data(commit data) for testing LUIS 
+Paper Code Repo: https://github.com/melkor54248/RepoSkillMiner
 
 ### Output data: 
-Evaluate Precision, Recall and f-measures for the derived technologies, by conducting a batch test in LUIS and reporting the results.
+Evaluate Precision, Recall and F-measures for the derived technologies, by conducting a test in LUIS and reporting the results.
