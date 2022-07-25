@@ -16,7 +16,7 @@ Whiskey
 Training Microsoft LUIS with utterances of different technologies using NLP and  testing the acquired code chunks from github repositories  on the trained LUIS to find Precision, Recall and F-measure.
 
 ### Input data:  
-Used GitHub REST API version 3, https://developer.github.com/v3/ to fetch input data(commit data) for testing LUIS 
+Used GitHub REST API version 3, [REST API GITHUB](https://developer.github.com/v3/) to fetch input data(commit data) for testing LUIS 
 
 Paper Code Repo: https://github.com/melkor54248/RepoSkillMiner
 
@@ -24,10 +24,11 @@ Our Git Project: https://github.com/theirshadhussain/Identifying-GitHub-Expertis
 
 ### Output data: 
 Evaluate Precision, Recall and F-measures for the derived technologies, by conducting a test in LUIS and reporting the results.
-The Output file [](url)
+
+The [Excel](https://github.com/theirshadhussain/Identifying-GitHub-Expertise-Using-NLP/blob/master/Data/metrics_for_Testingdata_LUIS.xlsx) file contains calculated metrics on the results obtained.
 ## Findings of reproduction
 
-### Process deltac:
+### Process delta:
 Our reproduction process differs from the process followed in the paper in the following ways:
 - The first part of this paper is to identify programming language of commit files. We have directly considered files in Python Language as no metrics were provided in the paper to validate.
 - While training and testing LUIS, we have used SQL and Pyspark whereas in the paper they have used Linq, Entity Framework, Async Programming, Angular, and React. This is because we wanted to compare the precision, recall, and F-measure values for different technologies and validate this part of the paper.
