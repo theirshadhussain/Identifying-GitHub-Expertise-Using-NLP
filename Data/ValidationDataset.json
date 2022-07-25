@@ -1,0 +1,285 @@
+{
+  "luis_schema_version": "7.0.0",
+  "intents": [
+    {
+      "name": "None",
+      "features": []
+    },
+    {
+      "name": "Pyspark",
+      "features": []
+    },
+    {
+      "name": "SQL",
+      "features": []
+    }
+  ],
+  "entities": [],
+  "hierarchicals": [],
+  "composites": [],
+  "closedLists": [],
+  "prebuiltEntities": [],
+  "utterances": [
+    {
+      "text": "''' changing pandas to pyspark dataframes'''",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "'''creating database'''",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "# create sparksession from builder import pyspark from pyspark.sql import sparksession spark = sparksession.builder.master(\"local[1]\") \\ .appname('sparkbyexamples.com') \\ .getorcreate()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "connect to the spark session",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "create table authors (author_name varchar(60), author_email varchar(70), author_pay int);",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "created spark session with pyspark",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "data = song_spotify.union(song_spotify).repartition('energy')",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "datacollect = deptdf.collect()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "dbs = spark.catalog.listdatabases()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "deleting columns",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "deleting rows",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "deptdf = spark.createdataframe(rdd, schema = deptcolumns)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "df = rdd.todf()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "df = spark.sql('''select 'spark' as hello ''')",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "df.select(collect_list('salary')).show(truncate=false)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "df2 = spark.sql('select _1,_2 from sample_table')",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "elect * from students order by class;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "group by other_counts",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "insert into [sales].[currency] values ('mss', 'sql dollars', getdate());",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum\",",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "number=rdd.getnumpartitions()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "partions = spark.conf.get('spark.sql.shuffle.partitions')",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "pyspark.sql import sparksession",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "rdd=spark.sparkcontext.parallelize(data)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "rdd2 = rdd.flatmap(lambda x: x.split(\" \"))",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "rdd3 = spark.sparkcontext.wholetextfiles('/path/textfile.txt')",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "reparrdd = rdd.repartition(4)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "retrieving alll tables in the database",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "select [businessentityid],[persontype], [namestyle] from [person].[person];",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select * from [person].[person] where businessentityid = 7;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select * from students where name like '[adk]%';",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select c.last_name as lname, t.name as city from customer as c inner join city as t on c.id = t.customer_id;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select concat (name, ‘,’ category) from tab;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select e.nationalidnumber,e.jobtitle, p.firstname, p.lastname from [humanresources].[employee] as e inner join [person].[person] as p on e.businessentityid = p.businessentityid;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select id, name, salary from customers;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select last_name from customer union all select last_name from employee;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select name, color from clothing where color is not null;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select name,surname,class,gender from students where (class='9math' and gender='m') or (class='9his' and gender='f');",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select students.name, students.surname, students.birthdate from student, borrows where students.studentid=borrows.borrowid;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select sum(freight) as totalfreight, territoryid from [sales].[salesorderheader] group by territoryid;",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "select top 1 ogrno,name,surname,class from students where class= '10math' order by newid();",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "songdf.groupby('genre').count().show()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "spark = sparksession.builder.master('local[1]').appname('sparkbyexamples.com').getorcreate()",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "spark session created in spark context",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "spark.conf.set('spark.sql.execution.arrow.pyspark.fallback.enabled','true')",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "spark.table('sample_table').write.saveastable('sample_hive_table')",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "sparkdf=spark.createdataframe(pandasdf)",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "sparksession.builder",
+      "intent": "Pyspark",
+      "entities": []
+    },
+    {
+      "text": "update [sales].[currency] set currencycode = 'sql' where currencycode = 'mss';",
+      "intent": "SQL",
+      "entities": []
+    },
+    {
+      "text": "using pyspark to access spark",
+      "intent": "None",
+      "entities": []
+    }
+  ],
+  "versionId": "0.1",
+  "name": "MSR",
+  "desc": "",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "phraselists": [],
+  "regex_features": [],
+  "patterns": [],
+  "settings": []
+}
